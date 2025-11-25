@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
     <title>Tabelas HTML</title>
 </head>
 <body>
     <table>
-        <caption>Lista de músicas</caption>
-        <tr>
-            <th>Banda</th>
-            <th>Música</th>
-        </tr>
-        <tr>
-            <td>Pitty</td>
-            <td>Teto de vidro</td>
-        </tr>
-        <tr>
-            <td>Pitty</td>
-            <td>Admirável chip novo</td>
-        </tr>
-        <tr>
-            <td>Pitty</td>
-            <td>Máscara</td>
-        </tr>
+        <caption>Lista de Músicas</caption>
+        <thead>
+            <tr>
+                <th>Banda</th>
+                <th>Música</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Pitty</td>
+                <td>Teto de vidro</td>
+            </tr>
+            <tr>
+                <!-- <td>Pitty</td> -->
+                <td>Admirável chip novo</td>
+            </tr>
+            <tr>
+                <!-- <td>Pitty</td> -->
+                <td>Máscara</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Direitos reservados &copy;</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
